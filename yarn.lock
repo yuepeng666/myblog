@@ -2101,10 +2101,10 @@ hexo-wordcount@^6.0.1:
   resolved "http://registry.npm.taobao.org/hexo-wordcount/download/hexo-wordcount-6.0.1.tgz#5a60efc9d3c8e421956f2fd6683ca94a8a795264"
   integrity sha1-WmDvydPI5CGVby/WaDypSop5UmQ=
 
-hexo@^3.7.0:
+hexo@^3.8.0:
   version "3.8.0"
-  resolved "http://registry.npm.taobao.org/hexo/download/hexo-3.8.0.tgz#4d05cce558ded5c14dfa1516bbae3971747f9747"
-  integrity sha1-TQXM5Vje1cFN+hUWu645cXR/l0c=
+  resolved "https://registry.npmjs.org/hexo/-/hexo-3.8.0.tgz#4d05cce558ded5c14dfa1516bbae3971747f9747"
+  integrity sha512-qMk0TZ+ErKMD25R+HMHFvbyTAcKszmGZYtQHT2pzVnZgitkJCShZ7b2qDbedtWBBizhutNbKkhQ4D3Dqivaviw==
   dependencies:
     abbrev "^1.0.7"
     archy "^1.0.0"

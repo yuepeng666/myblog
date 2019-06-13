@@ -84,5 +84,5 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@gitee.com:event-horizon/blog.git
+  repo: https://github.com/yuepeng666/myblog.git
   branch: master
