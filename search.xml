@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>%2F2019%2F06%2F25%2FTypeScript%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718interface SquareConfig &#123; color?: string; width?: number;&#125;// ()后面的冒号规定的是返回值的类型function createSquare(config: SquareConfig): &#123;color: string; area: number&#125; &#123; let newSquare = &#123;color: "white", area: 100&#125;; if (config.color) &#123; newSquare.color = config.color; &#125; if (config.width) &#123; newSquare.area = config.width * config.width; &#125; return newSquare;&#125;let mySquare = createSquare(&#123;color: "black"&#125;);]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo部署到GitHub并添加个人域名]]></title>
+    <url>%2F2019%2F06%2F14%2FHexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E5%B9%B6%E6%B7%BB%E5%8A%A0%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[域名 从freenom获取免费域名 添加域名解析: 点击 ManageDomain&gt;&gt; ManageTools &gt;&gt; Nameservers 在图示位置添加域名解析服务（本文使用 DnsPod 做域名解析） 123f1g1ns1.dnspod.netf1g1ns2.dnspod.net 注册并登陆 DnsPod, 点击添加域名添加你申请的域名，点击已域名，随后点击添加记录 主机记录：@， 记录类型： A，记录值： （ping 你的 github 账号获到取的 ip） ping githubname.github.io 主机记录：www， 记录类型：CNAME，记录值：yourgithubname.github.io 其他操作如图 绑定域名 在 hexo/source/目录下新建 CNAME 文件(必须大写) 打开 CNAME 文件在里面填入你获取到的域名 打开编辑_config.yml 在图示位置添加你的 github 项目地址 运行如下命令部署 blog 到 github hexo clean hexo d 打开 github 项目进行如下操作 完成]]></content>
+      <categories>
+        <category>hexo 随笔</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用的组件库]]></title>
+    <url>%2F2019%2F06%2F03%2F%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[进度条库’nprogress’]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[React学习记录]]></title>
+    <url>%2F2019%2F04%2F19%2FReact%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[运行yarn eject出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React配置文件释放后按需导入antd在运行yarn eject 后按需导入antd: 运行 yarn add babel-plugin-import 在package.json中添加 1234567891011121314"babel": &#123; "presets": [ "react-app" ], "plugins": [ [ "import", &#123; "libraryName": "antd", "style": "css" &#125; ] ]&#125;]]></content>
+      <categories>
+        <category>React</category>
+      </categories>
+      <tags>
+        <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[饿了么demo的一些笔记]]></title>
+    <url>%2F2019%2F03%2F12%2F%E9%A5%BF%E4%BA%86%E4%B9%88demo%E7%9A%84%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[饿了么demo的一些笔记 1.取得对象key相同的value和 例： 123456789101112131415161718192021var arr = [ &#123; id: 'a', num: 2 &#125;, &#123; id: 'a', num: 2 &#125;, &#123; id: 'a', num: 2 &#125;, &#123; id: 'b', num: 8 &#125;]var newarr = &#123;a:6, b:8&#125;// 代码实现let obj = &#123;&#125;;for (const item of arr) &#123; let [ id, num ] = [ item.id, item.num]; /* hasOwnProperty() 判断对象是否拥有某属性 */ if(obj.hasOwnProperty(id))&#123; obj[id] += num; &#125;else&#123; obj[id] = num; &#125;&#125;console.log(obj) 把对象存进数组，如果存在相同id则数量加1（购物车） 123456789101112let shopcar = [];let flag = false;shopcar.some(item =&gt; &#123; if (item.id === val.id) &#123; item.quantity += 1 flag = true return true &#125;&#125;)if (!flag) &#123; state.shopcar.push(val)&#125;]]></content>
+      <tags>
+        <tag>vue JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue实现组件按需加载]]></title>
+    <url>%2F2019%2F02%2F26%2FVue%E5%AE%9E%E7%8E%B0%E7%BB%84%E4%BB%B6%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD%2F</url>
+    <content type="text"><![CDATA[Vue实现组件按需加载]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue中跳转页面返回原页面回到记忆位置]]></title>
+    <url>%2F2019%2F02%2F26%2FVue%E4%B8%AD%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E8%BF%94%E5%9B%9E%E5%8E%9F%E9%A1%B5%E9%9D%A2%E5%9B%9E%E5%88%B0%E8%AE%B0%E5%BF%86%E4%BD%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[Vue中跳转页面返回原页面回到记忆位置 修改 router-view 12345678910&lt;transition name="router-fade" mode="out-in"&gt; // 在这里显示被缓存的页面 &lt;keep-alive&gt; &lt;router-view v-if="$route.meta.keepAlive"&gt;&lt;/router-view&gt; &lt;/keep-alive&gt;&lt;/transition&gt;&lt;transition name="router-fade" mode="out-in"&gt; // 在这里显示不需要被缓存的页面 &lt;router-view v-if="!$route.meta.keepAlive"&gt;&lt;/router-view&gt;&lt;/transition&gt; 修改vueRouter的配置文件index.js 123456789101112131415161718192021// &#123; path: '/home', name: 'home', component: home, meta: &#123; title: 'home', keepAlive: true // 需要被缓存 &#125;&#125;,// mode: 'history', // vueRouter默认为hash模式scrollBehavior (to, from, savedPosition) &#123; if (savedPosition) &#123; return savedPosition &#125; else &#123; if (from.meta.keepAlive) &#123; from.meta.savedPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop; &#125; return &#123; x: 0, y: to.meta.savedPosition ||0&#125; &#125;&#125;]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript防抖函数与节流函数]]></title>
+    <url>%2F2019%2F02%2F04%2FJavaScript%E9%98%B2%E6%8A%96%E5%87%BD%E6%95%B0%E4%B8%8E%E8%8A%82%E6%B5%81%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[DOM 操作是非常耗费性能的，如果在监听中，做了一些 DOM 操作，那无疑会给浏览器造成大量性能损失，我们可以通过一些操作来减少 DOM 操作 防抖函数定义：函数调用 n 秒后才会执行，如果函 数在 n 秒内被调用的话则函数不执行，重新计算执行时间123456789//var timer = false;window.onscroll = () =&gt; &#123; // 函数防抖 clearTimeout(timer); // 清除未执行的代码，重置回初始化状态 timer = setTimeout(function() &#123; console.log("函数防抖"); &#125;, 300);&#125;; 防抖函数封装123456789101112/**防抖函数封装**/function debounce(method, delay) &#123; var timer = null; return function() &#123; var context = this, args = arguments; clearTimeout(timer); timer = setTimeout(function() &#123; method.apply(context, args); &#125;, delay); &#125;;&#125; 节流函数定义：触发函数事件后，短时间间隔内无法连续调用，只有上一次函数执行后，过了规定的时间间隔，才能进行下一次的函数调用（一定时间内只能触发一次）。12345678910111213141516// 函数节流var canRun = true;window.onscroll = () =&gt; &#123; if (!canRun) &#123; // 判断是否已空闲，如果在执行中，则直接return return; &#125; canRun = false; var timer = setTimeout(() =&gt; &#123; var scrollTop = document.body.scrollTop || document.documentElement.scrollTop; console.log("滚动位置：" + scrollTop); canRun = true; &#125;, 1000);&#125;;//只有当 canRun 为 ture 时才可执行，当执行完毕时 释放当前任务，允许下一个任务执行]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue的slot内容分发]]></title>
+    <url>%2F2019%2F02%2F04%2FVue%E7%9A%84slot%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%2F</url>
+    <content type="text"><![CDATA[单个 slot在 children 这个标签里放 Dom，Vue 不会显示，类似于 React 1234567891011//父&lt;children&gt;&lt;span&gt;12345&lt;/span&gt;//这边不会显示&lt;/children&gt;//子components: &#123;children: &#123; template: "&lt;button&gt;为了明确作用范围，所以使用button标签&lt;/button&gt;" &#125;&#125; 你需要写成这个样子 123children: &#123; template: "&lt;button&gt;&lt;slot&gt;&lt;/slot&gt;为了明确作用范围，所以使用button标签&lt;button&gt;"&#125; 可以给 slot 添加属性 1234567891011121314 //父&lt;children&gt; &lt;span slot="name1"&gt;12345&lt;/span&gt;&lt;/children&gt;//子components: &#123; children: &#123; template: "&lt;button&gt; &lt;slot name="name1"&gt;&lt;/slot&gt; button标签 &lt;/button&gt;" &#125;&#125;]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+</search>
