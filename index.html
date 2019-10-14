@@ -521,6 +521,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/scss/" itemprop="url" rel="index">
+                    <span itemprop="name">scss</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -585,7 +607,7 @@
 
 
 
-<h1 id="scss-for循环"><a href="#scss-for循环" class="headerlink" title="scss for循环"></a>scss for循环</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$color-list: #5e83fb, #f7da47, #58ca9a, #ee706d, #ffa502, #808e9b;</span><br><span class="line"></span><br><span class="line">@for $i from 1 to 7 &#123;</span><br><span class="line">  .grid-#&#123;$i&#125; &#123;</span><br><span class="line">    background-color: nth($color-list, $i);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="scss-for循环"><a href="#scss-for循环" class="headerlink" title="scss for循环"></a>scss for循环</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$color-list</span>: <span class="number">#5e83fb</span>, <span class="number">#f7da47</span>, <span class="number">#58ca9a</span>, <span class="number">#ee706d</span>, <span class="number">#ffa502</span>, <span class="number">#808e9b</span>;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">for</span> <span class="variable">$i</span> from 1 to 7 &#123;</span><br><span class="line">  <span class="selector-class">.grid-</span>#&#123;<span class="variable">$i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: nth(<span class="variable">$color-list</span>, <span class="variable">$i</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
@@ -1190,6 +1212,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/npm-常用组件库/" itemprop="url" rel="index">
+                    <span itemprop="name">npm 常用组件库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -1211,7 +1255,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  5 字
+                  128 字
                 </span>
               
 
@@ -1251,7 +1295,12 @@
         
           
             <ol>
-<li>进度条库’nprogress’</li>
+<li><p>进度条库’nprogress’ <code>npm i nprogress -S</code></p>
+</li>
+<li><p>webpack 压缩插件’terser-webpack-plugin’ <code>npm i terser-webpack-plugin -D</code></p>
+<p>代码示例(以 vuecli3 为示例)：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里回覆盖webpack默认配置</span></span><br><span class="line">configureWebpack: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">	<span class="comment">// production模式</span></span><br><span class="line">	<span class="keyword">if</span> (isProduction) &#123;</span><br><span class="line">		<span class="comment">// 添加自定义代码压缩配置</span></span><br><span class="line">		config.plugins.push(</span><br><span class="line">			<span class="keyword">new</span> TerserPlugin(&#123;</span><br><span class="line">				<span class="comment">// 是否开启多线程</span></span><br><span class="line">				parallel: <span class="literal">true</span>,</span><br><span class="line">				terserOptions: &#123;</span><br><span class="line">					<span class="comment">// 去除打印</span></span><br><span class="line">					compress: &#123;</span><br><span class="line">						warnings: <span class="literal">false</span>,</span><br><span class="line">						drop_console: <span class="literal">true</span>,</span><br><span class="line">						drop_debugger: <span class="literal">true</span>,</span><br><span class="line">						pure_funcs: [<span class="string">'console.log'</span>]</span><br><span class="line">					&#125;,</span><br><span class="line">					<span class="comment">// 去除注释，当设置为true时，会保留注释</span></span><br><span class="line">					<span class="comment">// 当然这个默认是false</span></span><br><span class="line">					output: &#123;</span><br><span class="line">						comments: <span class="literal">false</span></span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;)</span><br><span class="line">		);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 
           
@@ -2040,7 +2089,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2051,7 +2100,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2103,7 +2152,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.1k</span>
+    <span title="Site words total count">2.2k</span>
   
  --> 
 </div>
@@ -2117,7 +2166,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.1k字</span>
+  <span class="post-count">博客全站共2.2k字</span>
 </div>
 
         

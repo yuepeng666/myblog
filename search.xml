@@ -15,6 +15,12 @@
     <title><![CDATA[scss一些笔记]]></title>
     <url>%2F2019%2F10%2F14%2Fscss%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[scss for循环1234567$color-list: #5e83fb, #f7da47, #58ca9a, #ee706d, #ffa502, #808e9b;@for $i from 1 to 7 &#123; .grid-#&#123;$i&#125; &#123; background-color: nth($color-list, $i); &#125;&#125;]]></content>
+      <categories>
+        <category>scss</category>
+      </categories>
+      <tags>
+        <tag>scss</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[vue cli 引入cdn加速]]></title>
@@ -46,7 +52,13 @@
   <entry>
     <title><![CDATA[常用的组件库]]></title>
     <url>%2F2019%2F06%2F03%2F%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93%2F</url>
-    <content type="text"><![CDATA[进度条库’nprogress’]]></content>
+    <content type="text"><![CDATA[进度条库’nprogress’ npm i nprogress -S webpack 压缩插件’terser-webpack-plugin’ npm i terser-webpack-plugin -D 代码示例(以 vuecli3 为示例)： 123456789101112131415161718192021222324252627// 这里回覆盖webpack默认配置configureWebpack: config =&gt; &#123; // production模式 if (isProduction) &#123; // 添加自定义代码压缩配置 config.plugins.push( new TerserPlugin(&#123; // 是否开启多线程 parallel: true, terserOptions: &#123; // 去除打印 compress: &#123; warnings: false, drop_console: true, drop_debugger: true, pure_funcs: ['console.log'] &#125;, // 去除注释，当设置为true时，会保留注释 // 当然这个默认是false output: &#123; comments: false &#125; &#125; &#125;) ); &#125;&#125;;]]></content>
+      <categories>
+        <category>npm 常用组件库</category>
+      </categories>
+      <tags>
+        <tag>npm 组件库</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[React学习记录]]></title>
