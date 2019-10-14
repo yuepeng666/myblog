@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="运行yarn eject出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React配置文件释放后按需导入antd在运行yarn eject 后按需导入antd:  运行 yarn add babel-plugin-import 在package.json中添加  1234567891011121314&quot;babel&quot;:">
+<meta name="description" content="运行 yarn eject 出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React 配置文件释放后按需导入 antd在运行 yarn eject 后按需导入 antd:  运行 yarn add babel-plugin-import 在 package.json 中添加  1234567891011121314">
 <meta name="keywords" content="react">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React学习记录">
 <meta property="og:url" content="https://yuepeng666.github.io/2019/04/19/React学习记录/index.html">
 <meta property="og:site_name" content="MyEssay">
-<meta property="og:description" content="运行yarn eject出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React配置文件释放后按需导入antd在运行yarn eject 后按需导入antd:  运行 yarn add babel-plugin-import 在package.json中添加  1234567891011121314&quot;babel&quot;:">
+<meta property="og:description" content="运行 yarn eject 出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React 配置文件释放后按需导入 antd在运行 yarn eject 后按需导入 antd:  运行 yarn add babel-plugin-import 在 package.json 中添加  1234567891011121314">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-13T03:00:07.791Z">
+<meta property="og:updated_time" content="2019-10-14T07:37:55.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React学习记录">
-<meta name="twitter:description" content="运行yarn eject出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React配置文件释放后按需导入antd在运行yarn eject 后按需导入antd:  运行 yarn add babel-plugin-import 在package.json中添加  1234567891011121314&quot;babel&quot;:">
+<meta name="twitter:description" content="运行 yarn eject 出现问题解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install` React 配置文件释放后按需导入 antd在运行 yarn eject 后按需导入 antd:  运行 yarn add babel-plugin-import 在 package.json 中添加  1234567891011121314">
 
 
 
@@ -385,7 +385,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  77 字
+                  80 字
                 </span>
               
 
@@ -422,15 +422,13 @@
       
 
       
-        <h3 id="运行yarn-eject出现问题"><a href="#运行yarn-eject出现问题" class="headerlink" title="运行yarn eject出现问题"></a>运行yarn eject出现问题</h3><pre><code>解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install`
-</code></pre><h3 id="React配置文件释放后按需导入antd"><a href="#React配置文件释放后按需导入antd" class="headerlink" title="React配置文件释放后按需导入antd"></a>React配置文件释放后按需导入antd</h3><p>在运行yarn eject 后按需导入antd:</p>
+        <h3 id="运行-yarn-eject-出现问题"><a href="#运行-yarn-eject-出现问题" class="headerlink" title="运行 yarn eject 出现问题"></a>运行 yarn eject 出现问题</h3><pre><code>解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install`
+</code></pre><h3 id="React-配置文件释放后按需导入-antd"><a href="#React-配置文件释放后按需导入-antd" class="headerlink" title="React 配置文件释放后按需导入 antd"></a>React 配置文件释放后按需导入 antd</h3><p>在运行 yarn eject 后按需导入 antd:</p>
 <ol>
 <li>运行 <code>yarn add babel-plugin-import</code></li>
-<li><p>在package.json中添加 </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">"babel": &#123;</span><br><span class="line">  "presets": [</span><br><span class="line">    <span class="string">"react-app"</span></span><br><span class="line">  ],</span><br><span class="line">  "plugins": [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"import"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"libraryName"</span>: <span class="string">"antd"</span>,</span><br><span class="line">        <span class="attr">"style"</span>: <span class="string">"css"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li></li>
+<li>在 package.json 中添加</li>
 </ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">"babel": &#123;</span><br><span class="line">  "presets": [</span><br><span class="line">    <span class="string">"react-app"</span></span><br><span class="line">  ],</span><br><span class="line">  "plugins": [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"import"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"libraryName"</span>: <span class="string">"antd"</span>,</span><br><span class="line">        <span class="attr">"style"</span>: <span class="string">"css"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;```</span><br><span class="line"><span class="number">3.</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -552,7 +550,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -607,7 +605,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#运行yarn-eject出现问题"><span class="nav-number">1.</span> <span class="nav-text">运行yarn eject出现问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React配置文件释放后按需导入antd"><span class="nav-number">2.</span> <span class="nav-text">React配置文件释放后按需导入antd</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#运行-yarn-eject-出现问题"><span class="nav-number">1.</span> <span class="nav-text">运行 yarn eject 出现问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React-配置文件释放后按需导入-antd"><span class="nav-number">2.</span> <span class="nav-text">React 配置文件释放后按需导入 antd</span></a></li></ol></div>
             
 
           </div>

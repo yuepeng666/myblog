@@ -423,9 +423,7 @@
         
           <meta name="referrer" content="never">
 
-
-
-<h1 id="异步创建加载script"><a href="#异步创建加载script" class="headerlink" title="异步创建加载script"></a>异步创建加载script</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;*&#125; url 需要引用的script标签的地址</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * @param &#123;*&#125; callback 创建完成script元素回调</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * @returns</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createScript</span>(<span class="params">url, callback</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> scriptEl = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line"></span><br><span class="line">  scriptEl.charset = <span class="string">'utf-8'</span></span><br><span class="line"></span><br><span class="line">  scriptEl.src = url;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// document.body.appendChild(scriptEl);</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 添加到head</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> head = <span class="built_in">document</span>.head || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">  head.appendChild(scriptEl);</span><br></pre></td></tr></table></figure>
+<h1 id="异步创建加载-script"><a href="#异步创建加载-script" class="headerlink" title="异步创建加载 script"></a>异步创建加载 script</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;*&#125; url 需要引用的script标签的地址</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * @param &#123;*&#125; callback 创建完成script元素回调</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * @returns</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createScript</span>(<span class="params">url, callback</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> scriptEl = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line"></span><br><span class="line">  scriptEl.charset = <span class="string">'utf-8'</span></span><br><span class="line"></span><br><span class="line">  scriptEl.src = url;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// document.body.appendChild(scriptEl);</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 添加到head</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> head = <span class="built_in">document</span>.head || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">  head.appendChild(scriptEl);</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/10/14/异步创建加载script/#more" rel="contents">
@@ -564,7 +562,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  32 字
+                  33 字
                 </span>
               
 
@@ -605,9 +603,7 @@
           
             <meta name="referrer" content="never">
 
-
-
-<h1 id="scss-for循环"><a href="#scss-for循环" class="headerlink" title="scss for循环"></a>scss for循环</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$color-list</span>: <span class="number">#5e83fb</span>, <span class="number">#f7da47</span>, <span class="number">#58ca9a</span>, <span class="number">#ee706d</span>, <span class="number">#ffa502</span>, <span class="number">#808e9b</span>;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">for</span> <span class="variable">$i</span> from 1 to 7 &#123;</span><br><span class="line">  <span class="selector-class">.grid-</span>#&#123;<span class="variable">$i</span>&#125; &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: nth(<span class="variable">$color-list</span>, <span class="variable">$i</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="scss-for-循环"><a href="#scss-for-循环" class="headerlink" title="scss for 循环"></a>scss for 循环</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$color-list</span>: <span class="number">#5e83fb</span>, <span class="number">#f7da47</span>, <span class="number">#58ca9a</span>, <span class="number">#ee706d</span>, <span class="number">#ffa502</span>, <span class="number">#808e9b</span>;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">for</span> <span class="variable">$i</span> from 1 to 7 &#123;</span><br><span class="line">	<span class="selector-class">.grid-</span>#&#123;<span class="variable">$i</span>&#125; &#123;</span><br><span class="line">		<span class="attribute">background-color</span>: nth(<span class="variable">$color-list</span>, <span class="variable">$i</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
@@ -781,7 +777,7 @@
         
           <meta name="referrer" content="never">
 
-<h1 id="vue-config-js-示例"><a href="#vue-config-js-示例" class="headerlink" title="vue.config.js 示例"></a>vue.config.js 示例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> TerserPlugin = <span class="built_in">require</span>(<span class="string">'terser-webpack-plugin'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> vueV = <span class="built_in">require</span>(<span class="string">'vue/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> routerV = <span class="built_in">require</span>(<span class="string">'vue-router/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> vuexV = <span class="built_in">require</span>(<span class="string">'vuex/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> axiosV = <span class="built_in">require</span>(<span class="string">'axios/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> elementV = <span class="built_in">require</span>(<span class="string">'element-ui/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> cookieV = <span class="built_in">require</span>(<span class="string">'js-cookie/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> nprogressV = <span class="built_in">require</span>(<span class="string">'nprogress/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> echartsV = <span class="built_in">require</span>(<span class="string">'echarts/package.json'</span>).version;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> isProduction = process.env.NODE_ENV === <span class="string">'production'</span>;</span><br><span class="line"><span class="keyword">const</span> isCdn = <span class="literal">true</span>;  <span class="comment">// 是否开启cdn模式</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> logTxt =</span><br><span class="line">  process.env.NODE_ENV === <span class="string">'development'</span></span><br><span class="line">    ? <span class="string">'编译开发'</span></span><br><span class="line">    : process.env.VUE_APP_FLAG === <span class="string">'test'</span></span><br><span class="line">      ? <span class="string">'打包测试'</span></span><br><span class="line">      : <span class="string">'打包线上'</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(logTxt);</span><br></pre></td></tr></table></figure>
+<h1 id="vue-config-js-示例"><a href="#vue-config-js-示例" class="headerlink" title="vue.config.js 示例"></a>vue.config.js 示例</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> TerserPlugin = <span class="built_in">require</span>(<span class="string">'terser-webpack-plugin'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> vueV = <span class="built_in">require</span>(<span class="string">'vue/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> routerV = <span class="built_in">require</span>(<span class="string">'vue-router/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> vuexV = <span class="built_in">require</span>(<span class="string">'vuex/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> axiosV = <span class="built_in">require</span>(<span class="string">'axios/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> elementV = <span class="built_in">require</span>(<span class="string">'element-ui/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> cookieV = <span class="built_in">require</span>(<span class="string">'js-cookie/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> nprogressV = <span class="built_in">require</span>(<span class="string">'nprogress/package.json'</span>).version;</span><br><span class="line"><span class="keyword">const</span> echartsV = <span class="built_in">require</span>(<span class="string">'echarts/package.json'</span>).version;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> isProduction = process.env.NODE_ENV === <span class="string">'production'</span>;</span><br><span class="line"><span class="keyword">const</span> isCdn = <span class="literal">true</span>; <span class="comment">// 是否开启cdn模式</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> logTxt =</span><br><span class="line">	process.env.NODE_ENV === <span class="string">'development'</span></span><br><span class="line">		? <span class="string">'编译开发'</span></span><br><span class="line">		: process.env.VUE_APP_FLAG === <span class="string">'test'</span></span><br><span class="line">		? <span class="string">'打包测试'</span></span><br><span class="line">		: <span class="string">'打包线上'</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(logTxt);</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/10/14/vue-cli-引入cdn加速/#more" rel="contents">
@@ -937,7 +933,8 @@
       
         
           
-            <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">interface SquareConfig &#123;</span><br><span class="line">  color?: string;</span><br><span class="line">  width?: number;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ()后面的冒号规定的是返回值的类型</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createSquare</span>(<span class="params">config: SquareConfig</span>): </span>&#123;color: string; area: number&#125; &#123;</span><br><span class="line">  <span class="keyword">let</span> newSquare = &#123;<span class="attr">color</span>: <span class="string">"white"</span>, <span class="attr">area</span>: <span class="number">100</span>&#125;;</span><br><span class="line">  <span class="keyword">if</span> (config.color) &#123;</span><br><span class="line">    newSquare.color = config.color;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (config.width) &#123;</span><br><span class="line">    newSquare.area = config.width * config.width;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newSquare;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> mySquare = createSquare(&#123;<span class="attr">color</span>: <span class="string">"black"</span>&#125;);</span><br></pre></td></tr></table></figure>
+            <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">interface SquareConfig &#123;</span><br><span class="line">	color?: string;</span><br><span class="line">	width?: number;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ()后面的冒号规定的是返回值的类型</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createSquare</span>(<span class="params">config: SquareConfig</span>): </span>&#123; color: string, <span class="attr">area</span>: number &#125; &#123;</span><br><span class="line">	<span class="keyword">let</span> newSquare = &#123; <span class="attr">color</span>: <span class="string">'white'</span>, <span class="attr">area</span>: <span class="number">100</span> &#125;;</span><br><span class="line">	<span class="keyword">if</span> (config.color) &#123;</span><br><span class="line">		newSquare.color = config.color;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (config.width) &#123;</span><br><span class="line">		newSquare.area = config.width * config.width;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> newSquare;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> mySquare = createSquare(&#123; <span class="attr">color</span>: <span class="string">'black'</span> &#125;);</span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -1439,7 +1436,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  77 字
+                  80 字
                 </span>
               
 
@@ -1478,15 +1475,13 @@
       
         
           
-            <h3 id="运行yarn-eject出现问题"><a href="#运行yarn-eject出现问题" class="headerlink" title="运行yarn eject出现问题"></a>运行yarn eject出现问题</h3><pre><code>解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install`
-</code></pre><h3 id="React配置文件释放后按需导入antd"><a href="#React配置文件释放后按需导入antd" class="headerlink" title="React配置文件释放后按需导入antd"></a>React配置文件释放后按需导入antd</h3><p>在运行yarn eject 后按需导入antd:</p>
+            <h3 id="运行-yarn-eject-出现问题"><a href="#运行-yarn-eject-出现问题" class="headerlink" title="运行 yarn eject 出现问题"></a>运行 yarn eject 出现问题</h3><pre><code>解决：运行`npm install`, 或者删除node_modules后重新运行 `npm/cnpm install`
+</code></pre><h3 id="React-配置文件释放后按需导入-antd"><a href="#React-配置文件释放后按需导入-antd" class="headerlink" title="React 配置文件释放后按需导入 antd"></a>React 配置文件释放后按需导入 antd</h3><p>在运行 yarn eject 后按需导入 antd:</p>
 <ol>
 <li>运行 <code>yarn add babel-plugin-import</code></li>
-<li><p>在package.json中添加 </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">"babel": &#123;</span><br><span class="line">  "presets": [</span><br><span class="line">    <span class="string">"react-app"</span></span><br><span class="line">  ],</span><br><span class="line">  "plugins": [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"import"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"libraryName"</span>: <span class="string">"antd"</span>,</span><br><span class="line">        <span class="attr">"style"</span>: <span class="string">"css"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li></li>
+<li>在 package.json 中添加</li>
 </ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">"babel": &#123;</span><br><span class="line">  "presets": [</span><br><span class="line">    <span class="string">"react-app"</span></span><br><span class="line">  ],</span><br><span class="line">  "plugins": [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">"import"</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">"libraryName"</span>: <span class="string">"antd"</span>,</span><br><span class="line">        <span class="attr">"style"</span>: <span class="string">"css"</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  ]</span><br><span class="line">&#125;```</span><br><span class="line"><span class="number">3.</span></span><br></pre></td></tr></table></figure>
 
           
         
@@ -1598,7 +1593,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  160 字
+                  164 字
                 </span>
               
 
@@ -1636,188 +1631,15 @@
 
       
         
-          
-            <h1 id="饿了么demo的一些笔记"><a href="#饿了么demo的一些笔记" class="headerlink" title="饿了么demo的一些笔记"></a>饿了么demo的一些笔记</h1><p>  1.取得对象key相同的value和 例：<br>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="string">'a'</span>, <span class="attr">num</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="string">'a'</span>, <span class="attr">num</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="string">'a'</span>, <span class="attr">num</span>: <span class="number">2</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">id</span>: <span class="string">'b'</span>, <span class="attr">num</span>: <span class="number">8</span> &#125;</span><br><span class="line">]</span><br><span class="line"><span class="keyword">var</span> newarr = &#123;<span class="attr">a</span>:<span class="number">6</span>, <span class="attr">b</span>:<span class="number">8</span>&#125;</span><br><span class="line"><span class="comment">// 代码实现</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">  <span class="keyword">let</span> [ id, num ] = [ item.id, item.num];</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    hasOwnProperty() 判断对象是否拥有某属性</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="keyword">if</span>(obj.hasOwnProperty(id))&#123;</span><br><span class="line">    obj[id] += num;</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    obj[id] = num;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(obj)</span><br></pre></td></tr></table></figure></p>
-<ol start="2">
-<li><p>把对象存进数组，如果存在相同id则数量加1（购物车）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> shopcar = [];</span><br><span class="line"><span class="keyword">let</span> flag = <span class="literal">false</span>;</span><br><span class="line">shopcar.some(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (item.id === val.id) &#123;</span><br><span class="line">        item.quantity += <span class="number">1</span></span><br><span class="line">        flag = <span class="literal">true</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">if</span> (!flag) &#123;</span><br><span class="line">    state.shopcar.push(val)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li></li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://yuepeng666.github.io/2019/02/26/Vue实现组件按需加载/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="一纸乱言">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://i.postimg.cc/gj7mWNMw/e15938c2982f1c0a666699bcc7614459.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MyEssay">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/26/Vue实现组件按需加载/" itemprop="url">Vue实现组件按需加载</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-26T10:47:52+08:00">
-                2019-02-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  9 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Vue实现组件按需加载"><a href="#Vue实现组件按需加载" class="headerlink" title="Vue实现组件按需加载"></a>Vue实现组件按需加载</h1>
-          
+          <h1 id="饿了么-demo-的一些笔记"><a href="#饿了么-demo-的一些笔记" class="headerlink" title="饿了么 demo 的一些笔记"></a>饿了么 demo 的一些笔记</h1><p>1.取得对象 key 相同的 value 和 例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [</span><br><span class="line">	&#123; <span class="attr">id</span>: <span class="string">'a'</span>, <span class="attr">num</span>: <span class="number">2</span> &#125;,</span><br><span class="line">	&#123; <span class="attr">id</span>: <span class="string">'a'</span>, <span class="attr">num</span>: <span class="number">2</span> &#125;,</span><br><span class="line">	&#123; <span class="attr">id</span>: <span class="string">'a'</span>, <span class="attr">num</span>: <span class="number">2</span> &#125;,</span><br><span class="line">	&#123; <span class="attr">id</span>: <span class="string">'b'</span>, <span class="attr">num</span>: <span class="number">8</span> &#125;</span><br><span class="line">];</span><br><span class="line"><span class="keyword">var</span> newarr = &#123; <span class="attr">a</span>: <span class="number">6</span>, <span class="attr">b</span>: <span class="number">8</span> &#125;;</span><br><span class="line"><span class="comment">// 代码实现</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">	<span class="keyword">let</span> [id, num] = [item.id, item.num];</span><br><span class="line">	<span class="comment">/* </span></span><br><span class="line"><span class="comment">      hasOwnProperty() 判断对象是否拥有某属性</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">	<span class="keyword">if</span> (obj.hasOwnProperty(id)) &#123;</span><br><span class="line">		obj[id] += num;</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		obj[id] = num;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(obj);</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/12/饿了么demo的一些笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1949,7 +1771,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  184 字
+                  185 字
                 </span>
               
 
@@ -1988,15 +1810,194 @@
       
         
           
-            <h1 id="Vue中跳转页面返回原页面回到记忆位置"><a href="#Vue中跳转页面返回原页面回到记忆位置" class="headerlink" title="Vue中跳转页面返回原页面回到记忆位置"></a>Vue中跳转页面返回原页面回到记忆位置</h1><ol>
-<li><p>修改 router-view</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;transition name=<span class="string">"router-fade"</span> mode=<span class="string">"out-in"</span>&gt;</span><br><span class="line">    <span class="comment">// 在这里显示被缓存的页面</span></span><br><span class="line">    &lt;keep-alive&gt;</span><br><span class="line">        &lt;router-view v-<span class="keyword">if</span>=<span class="string">"$route.meta.keepAlive"</span>&gt;&lt;/router-view&gt;</span><br><span class="line">    &lt;/keep-alive&gt;</span><br><span class="line">&lt;/transition&gt;</span><br><span class="line">&lt;transition name=<span class="string">"router-fade"</span> mode=<span class="string">"out-in"</span>&gt;</span><br><span class="line">    <span class="comment">// 在这里显示不需要被缓存的页面</span></span><br><span class="line">    &lt;router-view v-<span class="keyword">if</span>=<span class="string">"!$route.meta.keepAlive"</span>&gt;&lt;/router-view&gt;</span><br><span class="line">&lt;/transition&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改vueRouter的配置文件index.js</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// </span></span><br><span class="line">&#123;</span><br><span class="line">    path: <span class="string">'/home'</span>,</span><br><span class="line">    name: <span class="string">'home'</span>,</span><br><span class="line">    component: home,</span><br><span class="line">    meta: &#123;</span><br><span class="line">        title: <span class="string">'home'</span>,</span><br><span class="line">        keepAlive: <span class="literal">true</span> <span class="comment">// 需要被缓存</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// mode: 'history',     // vueRouter默认为hash模式</span></span><br><span class="line">scrollBehavior (to, <span class="keyword">from</span>, savedPosition) &#123;</span><br><span class="line">    <span class="keyword">if</span> (savedPosition) &#123;</span><br><span class="line">        <span class="keyword">return</span> savedPosition</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">from</span>.meta.keepAlive) &#123;</span><br><span class="line">            <span class="keyword">from</span>.meta.savedPosition = <span class="built_in">window</span>.pageYOffset || <span class="built_in">document</span>.documentElement.scrollTop || <span class="built_in">document</span>.body.scrollTop;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">x</span>: <span class="number">0</span>, <span class="attr">y</span>: to.meta.savedPosition ||<span class="number">0</span>&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+            <h1 id="Vue-中跳转页面返回原页面回到记忆位置"><a href="#Vue-中跳转页面返回原页面回到记忆位置" class="headerlink" title="Vue 中跳转页面返回原页面回到记忆位置"></a>Vue 中跳转页面返回原页面回到记忆位置</h1><ol>
+<li>修改 router-view</li>
 </ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;transition name=<span class="string">"router-fade"</span> mode=<span class="string">"out-in"</span>&gt;</span><br><span class="line">    <span class="comment">// 在这里显示被缓存的页面</span></span><br><span class="line">    &lt;keep-alive&gt;</span><br><span class="line">        &lt;router-view v-<span class="keyword">if</span>=<span class="string">"$route.meta.keepAlive"</span>&gt;&lt;/router-view&gt;</span><br><span class="line">    &lt;/keep-alive&gt;</span><br><span class="line">&lt;/transition&gt;</span><br><span class="line">&lt;transition name=<span class="string">"router-fade"</span> mode=<span class="string">"out-in"</span>&gt;</span><br><span class="line">    <span class="comment">// 在这里显示不需要被缓存的页面</span></span><br><span class="line">    &lt;router-view v-<span class="keyword">if</span>=<span class="string">"!$route.meta.keepAlive"</span>&gt;&lt;/router-view&gt;</span><br><span class="line">&lt;/transition&gt;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>修改 vueRouter 的配置文件 index.js</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line">&#123;</span><br><span class="line">    path: <span class="string">'/home'</span>,</span><br><span class="line">    name: <span class="string">'home'</span>,</span><br><span class="line">    component: home,</span><br><span class="line">    meta: &#123;</span><br><span class="line">        title: <span class="string">'home'</span>,</span><br><span class="line">        keepAlive: <span class="literal">true</span> <span class="comment">// 需要被缓存</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// mode: 'history',     // vueRouter默认为hash模式</span></span><br><span class="line">scrollBehavior (to, <span class="keyword">from</span>, savedPosition) &#123;</span><br><span class="line">    <span class="keyword">if</span> (savedPosition) &#123;</span><br><span class="line">        <span class="keyword">return</span> savedPosition</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">from</span>.meta.keepAlive) &#123;</span><br><span class="line">            <span class="keyword">from</span>.meta.savedPosition = <span class="built_in">window</span>.pageYOffset || <span class="built_in">document</span>.documentElement.scrollTop || <span class="built_in">document</span>.body.scrollTop;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123; <span class="attr">x</span>: <span class="number">0</span>, <span class="attr">y</span>: to.meta.savedPosition ||<span class="number">0</span>&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yuepeng666.github.io/2019/02/04/JavaScript防抖函数与节流函数/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="一纸乱言">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://i.postimg.cc/gj7mWNMw/e15938c2982f1c0a666699bcc7614459.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MyEssay">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/04/JavaScript防抖函数与节流函数/" itemprop="url">JavaScript防抖函数与节流函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-04T16:25:02+08:00">
+                2019-02-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  365 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>DOM 操作是非常耗费性能的，如果在监听中，做了一些 DOM 操作，那无疑会给浏览器造成大量性能损失，我们可以通过一些操作来减少 DOM 操作</p>
+<h1 id="防抖函数"><a href="#防抖函数" class="headerlink" title="防抖函数"></a>防抖函数</h1><h5 id="定义：函数调用-n-秒后才会执行，如果函-数在-n-秒内被调用的话则函数不执行，重新计算执行时间-规定一定时间内，时间触发的次数"><a href="#定义：函数调用-n-秒后才会执行，如果函-数在-n-秒内被调用的话则函数不执行，重新计算执行时间-规定一定时间内，时间触发的次数" class="headerlink" title="定义：函数调用 n 秒后才会执行，如果函 数在 n 秒内被调用的话则函数不执行，重新计算执行时间(规定一定时间内，时间触发的次数)"></a>定义：函数调用 n 秒后才会执行，如果函 数在 n 秒内被调用的话则函数不执行，重新计算执行时间(规定一定时间内，时间触发的次数)</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">var</span> timer = <span class="literal">false</span>;</span><br><span class="line"><span class="built_in">window</span>.onscroll = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">	<span class="comment">// 函数防抖</span></span><br><span class="line">	clearTimeout(timer); <span class="comment">// 清除未执行的代码，重置回初始化状态</span></span><br><span class="line">	timer = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">'函数防抖'</span>);</span><br><span class="line">	&#125;, <span class="number">300</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/04/JavaScript防抖函数与节流函数/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2082,7 +2083,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
