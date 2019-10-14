@@ -53,7 +53,7 @@ f1g1ns2.dnspod.net
 
 1. 打开编辑\_config.yml 在图示位置添加你的 github 项目地址
 
-  ![](https://ws1.sinaimg.cn/large/005R0tlAly1g4d7quhnayj30jb0e1t96.jpg)
+![](https://ws1.sinaimg.cn/large/005R0tlAly1g4d7quhnayj30jb0e1t96.jpg)
 
 1. 运行如下命令部署 blog 到 github
 
@@ -66,6 +66,5 @@ f1g1ns2.dnspod.net
 ![](https://ws1.sinaimg.cn/large/005R0tlAly1g4d7df01oxj30ti0mdmy9.jpg)
 
 ![](https://ws1.sinaimg.cn/large/005R0tlAly1g4d7e33ydcj30rl0kgq40.jpg)
-
 
 1. 完成

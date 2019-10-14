@@ -9,19 +9,20 @@ tags: vue
 
 在 children 这个标签里放 Dom，Vue 不会显示，类似于 React
 
-```JavaScript
-  //父
-  <children>
-  <span>12345</span>//这边不会显示
-  </children>
+```js
+//父
+<children>
+	<span>12345</span>//这边不会显示
+</children>;
 
-  //子
-  components: {
-  children: {
-      template: "<button>为了明确作用范围，所以使用button标签</button>"
-    }
-  }
+//子
+components: {
+	children: {
+		template: '<button>为了明确作用范围，所以使用button标签</button>';
+	}
+}
 ```
+
  <!-- more -->
 
 你需要写成这个样子

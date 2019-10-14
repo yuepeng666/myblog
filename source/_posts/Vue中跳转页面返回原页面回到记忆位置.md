@@ -4,8 +4,11 @@ date: 2019-02-26 10:36:12
 categories: Vue
 tags: vue
 ---
-# Vue中跳转页面返回原页面回到记忆位置
+
+# Vue 中跳转页面返回原页面回到记忆位置
+
 1. 修改 router-view
+
 ```js
     <transition name="router-fade" mode="out-in">
         // 在这里显示被缓存的页面
@@ -18,9 +21,11 @@ tags: vue
         <router-view v-if="!$route.meta.keepAlive"></router-view>
     </transition>
 ```
-2. 修改vueRouter的配置文件index.js
+
+2. 修改 vueRouter 的配置文件 index.js
+
 ```js
-    // 
+    //
     {
         path: '/home',
         name: 'home',

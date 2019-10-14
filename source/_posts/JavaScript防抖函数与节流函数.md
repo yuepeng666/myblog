@@ -15,13 +15,14 @@ DOM 操作是非常耗费性能的，如果在监听中，做了一些 DOM 操�
 //
 var timer = false;
 window.onscroll = () => {
-  // 函数防抖
-  clearTimeout(timer); // 清除未执行的代码，重置回初始化状态
-  timer = setTimeout(function() {
-    console.log("函数防抖");
-  }, 300);
+	// 函数防抖
+	clearTimeout(timer); // 清除未执行的代码，重置回初始化状态
+	timer = setTimeout(function() {
+		console.log('函数防抖');
+	}, 300);
 };
 ```
+
  <!-- more -->
 
 ###### 防抖函数封装
@@ -29,18 +30,20 @@ window.onscroll = () => {
 ```js
 /**防抖函数封装**/
 function debounce(method, delay) {
-  var timer = null;
-  return function() {
-    var context = this,
-      args = arguments;
-    clearTimeout(timer);
-    timer = setTimeout(function() {
-      method.apply(context, args);
-    }, delay);
-  };
+	var timer = null;
+	return function() {
+		var context = this,
+			args = arguments;
+		clearTimeout(timer);
+		timer = setTimeout(function() {
+			method.apply(context, args);
+		}, delay);
+	};
 }
 ```
+
 ---
+
 # 节流函数
 
 ##### 定义：触发函数事件后，短时间间隔内无法连续调用，只有上一次函数执行后，过了规定的时间间隔，才能进行下一次的函数调用（只允许一个函数在 X 毫秒内执行一次）。
@@ -49,17 +52,17 @@ function debounce(method, delay) {
 // 函数节流
 var canRun = true;
 window.onscroll = () => {
-  if (!canRun) {
-    // 判断是否已空闲，如果在执行中，则直接return
-    return;
-  }
-  canRun = false;
-  var timer = setTimeout(() => {
-    var scrollTop =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    console.log("滚动位置：" + scrollTop);
-    canRun = true;
-  }, 1000);
+	if (!canRun) {
+		// 判断是否已空闲，如果在执行中，则直接return
+		return;
+	}
+	canRun = false;
+	var timer = setTimeout(() => {
+		var scrollTop =
+			document.body.scrollTop || document.documentElement.scrollTop;
+		console.log('滚动位置：' + scrollTop);
+		canRun = true;
+	}, 1000);
 };
 //只有当 canRun 为 ture 时才可执行，当执行完毕时 释放当前任务，允许下一个任务执行
 ```

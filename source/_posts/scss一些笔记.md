@@ -7,16 +7,14 @@ tags: scss
 
 <meta name="referrer" content="never">
 
-
-
-# scss for循环
+# scss for 循环
 
 ```scss
 $color-list: #5e83fb, #f7da47, #58ca9a, #ee706d, #ffa502, #808e9b;
 
 @for $i from 1 to 7 {
-  .grid-#{$i} {
-    background-color: nth($color-list, $i);
-  }
+	.grid-#{$i} {
+		background-color: nth($color-list, $i);
+	}
 }
 ```

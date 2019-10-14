@@ -1,15 +1,14 @@
 ---
 title: 异步创建加载script
 date: 2019-10-14 15:12:14
-categories: js 
+categories: js
 tags: js
 ---
 
 <meta name="referrer" content="never">
 
+# 异步创建加载 script
 
-
-# 异步创建加载script
 ```js
 /**
  * @param {*} url 需要引用的script标签的地址
@@ -36,8 +35,10 @@ function createScript(url, callback) {
 
   head.appendChild(scriptEl);
 ```
+
 <!-- more -->
-```js  
+
+```js
 
   const promise = new Promise((resolve, reject) => {
 
@@ -106,4 +107,3 @@ function removeScript(scriptEl) {
 export default createScript;
 
 ```
-
